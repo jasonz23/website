@@ -22,13 +22,13 @@ function AboutMe() {
             direction = "row"  alignContent = "center" justifyContent = "center">
                 <Grid item sx = {{
                     mt: {xs: 0, md: 0, lg: 0},
-                    width: 0.8
+                    width: 0.8,
                     }} >
                     <InfoCard info = {AboutInfo[0]} />
                 </Grid>
                 <Grid item sx = {{  
                     mt: {xs: 5, md: 10, lg: 10},
-                    width: 0.8
+                    width: 0.8,
                     }}>
                     <InfoCard info = {AboutInfo[1]}/>
                 </Grid>
