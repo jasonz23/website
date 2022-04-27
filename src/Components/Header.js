@@ -9,7 +9,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 function IconImg(props) {
     
     const useStyles = makeStyles(() => ({
@@ -29,22 +29,34 @@ function IconImg(props) {
         },
         contact: {
 
-            "&.MuiButton-contained": {
-                color: "yellow"
-            },
-            "&.MuiButton-outlined": {
-                color: "white"
-            },
+
             "&.MuiButton-root": {
-                border: "2px white solid",
                 fontSize: "1.7vh",
                 fontFamily: "Nunito",
-
+                fontWeight: "bold",
+                height: "6vh",
+                minWidth: "10rem",
+                color: "#fff",
+                border: "0px",
             },
 
 
             fontSize: "3rem"
         },
+        resume: {
+            "&.MuiButton-root": {
+                border: "0px",
+                fontSize: "1.7vh",
+                fontFamily: "Nunito",
+                color: "#fff",
+                fontWeight: "bold",
+                height: "6vh",
+
+            },
+
+
+            fontSize: "3rem"
+        }
 
 
     }))
@@ -52,26 +64,35 @@ function IconImg(props) {
     if (props.width < 600) {
         return (
             <div >
-                    <IconButton className = {classes.icon}>
-                       <SortIcon/>  
-                    </IconButton>
+                <IconButton className = {classes.icon}>
+                    <SortIcon/>  
+                </IconButton>
                     
             </div>
         )
     } else {
         return (
             <div>
-                <Box sx = {{m: 0}}>
-                    <IconButton className = {classes.iconGithub}>
-                        <GitHubIcon className = {classes.iconM}/>
-                    </IconButton>
-                    <IconButton className = {classes.iconGithub}>
-                        <LinkedInIcon className = {classes.iconM}/>
-                    </IconButton>
-                    <Button variant="text" className = {classes.iconM}>Resume</Button>
-                    <Button className = {classes.contact} variant="outlined" disableElevation>Contact Me</Button>
+                <Grid container justify = "space-around" spacing = {2}>
+                    <Grid item xs={3}>
+                        <IconButton className = {classes.iconGithub}>
+                            <GitHubIcon />
+                        </IconButton>
+                    </Grid>
+                    <Grid item xs={3}>
+                        <IconButton className = {classes.iconGithub}>
+                            <LinkedInIcon />
+                        </IconButton>
+                    </Grid>
+                    <Grid item xs={3}>
+                        <Button className = {classes.resume} variant="text" >Resume</Button>
+                    </Grid>
+                    <Grid item xs={3}>
+                        <Button className = {classes.contact} variant="text" disableElevation>Contact Me</Button>
+
+                    </Grid>
                     
-                </Box>
+                </Grid>
             </div>
         )
     }
@@ -149,7 +170,7 @@ function Header() {
                         Welcome to <br />
                         <span className={classes.colorText}>My Website</span>
                     </h1>
-                    <Scroll to="place-to-visit" smooth={true}>
+                    <Scroll to="aboutme" smooth={true}>
                         <IconButton>
                             <ExpandMoreIcon className={classes.goDown} />
                         </IconButton>
