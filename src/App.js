@@ -1,7 +1,7 @@
 
 import './App.css';
-import Header from "./Components/Header"
-import AboutMe  from "./Components/AboutMe"
+import Header from "./Pages/Header"
+import AboutMe  from "./Pages/AboutMe"
 function App() {
   return (
     <div>
