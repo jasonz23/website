@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.050e14d2.css",
-    "main.js": "/my-website/static/js/main.97128b54.js",
-    "static/js/787.71e672d5.chunk.js": "/my-website/static/js/787.71e672d5.chunk.js",
-    "static/media/tennis.jpg": "/my-website/static/media/tennis.aba5427fb1e2bd6d7b18.jpg",
-    "static/media/UBC-logo.jpg": "/my-website/static/media/UBC-logo.3fd511fd8a7032f9e07e.jpg",
-    "index.html": "/my-website/index.html",
-    "main.050e14d2.css.map": "/my-website/static/css/main.050e14d2.css.map",
-    "main.97128b54.js.map": "/my-website/static/js/main.97128b54.js.map",
-    "787.71e672d5.chunk.js.map": "/my-website/static/js/787.71e672d5.chunk.js.map"
+    "main.css": "/website/static/css/main.050e14d2.css",
+    "main.js": "/website/static/js/main.ca954009.js",
+    "static/js/787.71e672d5.chunk.js": "/website/static/js/787.71e672d5.chunk.js",
+    "static/media/tennis.jpg": "/website/static/media/tennis.aba5427fb1e2bd6d7b18.jpg",
+    "static/media/UBC-logo.jpg": "/website/static/media/UBC-logo.3fd511fd8a7032f9e07e.jpg",
+    "index.html": "/website/index.html",
+    "main.050e14d2.css.map": "/website/static/css/main.050e14d2.css.map",
+    "main.ca954009.js.map": "/website/static/js/main.ca954009.js.map",
+    "787.71e672d5.chunk.js.map": "/website/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.050e14d2.css",
-    "static/js/main.97128b54.js"
+    "static/js/main.ca954009.js"
   ]
 }
