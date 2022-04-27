@@ -6,14 +6,6 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
 function InfoCard(props) {
-    const useStyles = makeStyles(() => ({
-        root: {
-            height: "100vh",
-            background: 'linear-gradient(45deg,#FF8E53 120% ,#FE6B8B 100% )'
-
-        }
-    }))
-    const classes = useStyles();
     return(
         <div>
             <Card sx = {{
@@ -26,8 +18,8 @@ function InfoCard(props) {
                 component = "img"
                 sx = {{
                     
-                    width: {xs: 1, md: 0.4},
-                    height: 0.3,
+                    width: {xs: 0.7, md: 0.4},
+                    height: 0.2,
                 }}
                 alt = "UBC"
                 src = {props.info.img}
