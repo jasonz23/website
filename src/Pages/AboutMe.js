@@ -2,6 +2,7 @@ import { makeStyles } from "@material-ui/core";
 import React from 'react';
 import InfoCard from "../Components/InfoCard";
 import Grid from '@mui/material/Grid';
+import AboutInfo from "../Static/AboutInfo";
 function AboutMe() {
     const useStyles = makeStyles(() => ({
         root: {
@@ -13,18 +14,19 @@ function AboutMe() {
 
         },
         item: {
-            width: "80vw"
+            width: "80vw",
+            height: "30vh"
         }
     }))
     const classes = useStyles();
     return(
         <div className = {classes.root} id = "aboutme" >
-            <Grid container direction = "column" rowSpacing = {10} alignContent = "center" justifyContent = "center">
+            <Grid container direction = "column"  alignContent = "center" justifyContent = "center">
                 <Grid item className = {classes.item}>
-                    <InfoCard  />
+                    <InfoCard info = {AboutInfo[0]} />
                 </Grid>
                 <Grid item className = {classes.item}>
-                    <InfoCard />
+                    <InfoCard info = {AboutInfo[1]}/>
                 </Grid>
             
                         
