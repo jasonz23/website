@@ -6,26 +6,30 @@ import AboutInfo from "../Static/AboutInfo";
 function AboutMe() {
     const useStyles = makeStyles(() => ({
         root: {
-            height: "100vh",
+            height: "110vh",
             background: 'linear-gradient(45deg,#FF8E53 120% ,#FE6B8B 100% )',
             display: "flex",
             alignContent: "center",
             justifyContent: "center"
 
         },
-        item: {
-            width: "80vw",
-            height: "30vh"
-        }
+
     }))
     const classes = useStyles();
     return(
         <div className = {classes.root} id = "aboutme" >
-            <Grid container direction = "column"  alignContent = "center" justifyContent = "center">
-                <Grid item className = {classes.item}>
+            <Grid container 
+            direction = "row"  alignContent = "center" justifyContent = "center">
+                <Grid item sx = {{
+                    mt: {xs: 0, md: 0, lg: 0},
+                    width: 0.8
+                    }} >
                     <InfoCard info = {AboutInfo[0]} />
                 </Grid>
-                <Grid item className = {classes.item}>
+                <Grid item sx = {{  
+                    mt: {xs: 5, md: 10, lg: 10},
+                    width: 0.8
+                    }}>
                     <InfoCard info = {AboutInfo[1]}/>
                 </Grid>
             
