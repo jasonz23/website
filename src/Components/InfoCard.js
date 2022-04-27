@@ -3,7 +3,6 @@ import React from 'react';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import UBC from "../Static/UBC-logo.jpg"
 import Grid from '@mui/material/Grid';
 
 function InfoCard(props) {
