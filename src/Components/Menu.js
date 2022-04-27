@@ -4,9 +4,13 @@ import { IconButton } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-
+import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
+import { Link as Scroll } from 'react-scroll';
+import Divider from '@mui/material/Divider';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import CancelIcon from '@mui/icons-material/Cancel';
 function Menu() {
     const useStyles = makeStyles(() => ({
         icon: {
@@ -16,34 +20,84 @@ function Menu() {
             },
 
         },
+        menu: {
+            width: "100vw",
+            display: "flex",
+            flexDirection: "column",
+  
+            alignItems: "center",
+            background: '#FF9899',
+            height: "100vh"
+            
+        },
+        drawer: {
+
+
+        }
     }))
     const classes = useStyles();
     const [state, setState] = React.useState(false);
-    const list = () => (
-        <Box
-            sx = {{width: 1}}
-            role = "presentation"
-            onClick = {setState(false)}
-
-        >
-            <List>
-                <ListItem button>
-                    <h1>Cow</h1>
-                </ListItem>
-            </List> 
-
-        </Box>
-
-    )
     return (
-        <div>
+        <div >
             <IconButton className = {classes.icon} onClick = {() => {setState(true)}} >
                 <SortIcon/>  
             </IconButton>
             <Drawer
             open = {state}
-            onClose = {() => {setState(false)}}>
-                {list}
+            onClose = {() => {setState(false)}}
+           
+            anchor = "right"
+            className = {classes.drawer}>
+                <Box className = {classes.menu}>
+
+                <IconButton onClick = {() => {setState(false)}}>
+                    <CancelIcon />
+                </IconButton>
+                <Grid container direction = "column" rowSpacing = {2}
+                sx = {{
+                    width: 250,
+                    alignItems: "center",
+                    mt: 6
+                }}
+                >
+                    <Grid item sx = {{pt: 5}}>
+                        <Scroll to = "aboutme" smooth = {true}>
+                            <Button onClick = {() => {setState(false)}}>About Me</Button>
+
+                        </Scroll>
+                    </Grid>
+                    <Grid item>
+                        <Scroll to = "projects" smooth = {true}>
+
+                            <Button onClick = {() => {setState(false)}}>Projects</Button>
+
+                        </Scroll>
+
+                    </Grid>
+                    <Grid item>
+                        <Scroll to = "contact-form" smooth = {true}>
+                            <Button onClick = {() => {setState(false)}}>Contact Me</Button>
+
+                        </Scroll>
+                    </Grid>
+                    
+                </Grid>
+                <br />
+                <br />
+                <Divider />
+                <Grid container>
+                    <Grid item >
+                        <IconButton className = {classes.icon} aria-label="Github.com" onClick={() => window.open('https://github.com/jasonz23')}>
+                            <GitHubIcon />
+                        </IconButton>
+                    </Grid>
+                    <Grid item >
+                        <IconButton className = {classes.icon} aria-label="Linkedin.com" onClick={() => window.open('https://www.linkedin.com/in/jason-zhao-24a5b8233/')}>
+                            <LinkedInIcon />
+                        </IconButton>
+                    </Grid>
+                </Grid>
+                </Box>
             </Drawer>
         </div>
     )
