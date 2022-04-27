@@ -2,10 +2,10 @@
 import React, { useEffect, useState } from 'react';
 import { makeStyles } from "@material-ui/styles"
 import { AppBar, IconButton, Toolbar, Collapse} from "@material-ui/core"
-import SortIcon from '@mui/icons-material/Sort';
+
 import { Link as Scroll } from 'react-scroll';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-
+import Menu from "../Components/Menu"
 import Button from '@mui/material/Button';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -64,9 +64,7 @@ function IconImg(props) {
     if (props.width < 600) {
         return (
             <div >
-                <IconButton className = {classes.icon}>
-                    <SortIcon/>  
-                </IconButton>
+                <Menu />
                     
             </div>
         )
@@ -88,7 +86,10 @@ function IconImg(props) {
                         <Button className = {classes.resume} variant="text" >Resume</Button>
                     </Grid>
                     <Grid item xs={3}>
-                        <Button className = {classes.contact} variant="text" disableElevation>Contact Me</Button>
+                        <Scroll to="contact-form" smooth={true}>
+                            <Button className = {classes.contact} variant="text" disableElevation>Contact Me</Button>
+
+                        </Scroll>
 
                     </Grid>
                     
