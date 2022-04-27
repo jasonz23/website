@@ -24,7 +24,7 @@ function Menu() {
             width: "100vw",
             display: "flex",
             flexDirection: "column",
-  
+            
             alignItems: "center",
             background: '#FF9899',
             height: "100vh"
@@ -33,6 +33,25 @@ function Menu() {
         drawer: {
 
 
+        },
+        close: {
+            alignSelf: "flex-end",
+            '& svg': {
+                fontSize: "4.2rem",
+                color: "white",
+                marginRight: "5vw",
+                paddingTop: "7vh,"
+            },
+        },
+        button: {
+            "&.MuiButton-root": {
+                border: "2px white solid",
+                fontSize: "2vh",
+                fontFamily: "Signika",
+                color: "#fff",
+                width: "30vw"
+
+            },
         }
     }))
     const classes = useStyles();
@@ -50,10 +69,11 @@ function Menu() {
             className = {classes.drawer}>
                 <Box className = {classes.menu}>
 
-                <IconButton onClick = {() => {setState(false)}}>
+                <IconButton onClick = {() => {setState(false)}}
+                className = {classes.close}>
                     <CancelIcon />
                 </IconButton>
-                <Grid container direction = "column" rowSpacing = {2}
+                <Grid container direction = "column" rowSpacing = {7}
                 sx = {{
                     width: 250,
                     alignItems: "center",
@@ -62,24 +82,32 @@ function Menu() {
                 >
                     <Grid item sx = {{pt: 5}}>
                         <Scroll to = "aboutme" smooth = {true}>
-                            <Button onClick = {() => {setState(false)}}>About Me</Button>
+                            <Button onClick = {() => {setState(false)}}
+                            className = {classes.button}>About Me</Button>
 
                         </Scroll>
                     </Grid>
                     <Grid item>
-                        <Scroll to = "projects" smooth = {true}>
+                        <Scroll to = "projects" smooth = {true} offset = {-100}>
 
-                            <Button onClick = {() => {setState(false)}}>Projects</Button>
+                            <Button onClick = {() => {setState(false)}}
+                            className = {classes.button}>Projects</Button>
 
                         </Scroll>
 
+                    </Grid>
+                    <Grid item>
+                        <Button onClick = {() => {setState(false)}}
+                            className = {classes.button}>Resume</Button>
                     </Grid>
                     <Grid item>
                         <Scroll to = "contact-form" smooth = {true}>
-                            <Button onClick = {() => {setState(false)}}>Contact Me</Button>
+                            <Button onClick = {() => {setState(false)}}
+                            className = {classes.button}>Contact Me</Button>
 
                         </Scroll>
                     </Grid>
+                    
                     
                 </Grid>
                 <br />
