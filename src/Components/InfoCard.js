@@ -12,6 +12,7 @@ function InfoCard(props) {
                 display: "flex",
                 flexDirection: {xs: "column", md: "row"},
                 alignItems: "center",
+                maxHeight: "40vh"
                 
             }}>
                 <Box
@@ -32,7 +33,7 @@ function InfoCard(props) {
                     p: 3
                 }}>
                     <Grid item>
-                        <Typography variant = "h2" fontFamily= "Nunito" fontWeight = "bold"> {props.info.title}</Typography>
+                        <Typography variant = "h3" fontFamily= "Nunito" fontWeight = "bold"> {props.info.title}</Typography>
                     </Grid>
                     <Grid item>
                         <Typography variant = "h5" fontFamily= "Nunito">{props.info.bio}</Typography>
