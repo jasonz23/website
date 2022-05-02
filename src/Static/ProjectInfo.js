@@ -38,6 +38,14 @@ const ProjectInfo =[{
     bio: "A web application that has a movie search engine and is able to store movies",
     link: "https://moviesearchjason.netlify.app/",
     github: "https://github.com/jasonz23/movie-search",
+},
+{
+    id: 5,
+    title: "Tricity Website",
+    img: ubc,
+    bio: "Resturant website for the Tricity Japanese Salmon Bowl",
+    link: "https://tricity.netlify.app/",
+    github: "https://github.com/frankljin/tricity"
 }
 ]
 
