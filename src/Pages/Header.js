@@ -182,7 +182,7 @@ function Header() {
                     <h2 className = {classes.subtitle}>
                         3rd Year Computer Science Student
                     </h2>
-                    <Scroll to="aboutme" smooth={true}>
+                    <Scroll to="aboutme" smooth={true} offset = {-70}>
                         <IconButton>
                             <ExpandMoreIcon className={classes.goDown} />
                         </IconButton>
