@@ -33,7 +33,7 @@ const ProjectInfo =[{
 },
 {
     id: 4,
-    title: "Movie Search/Watch List",
+    title: "Movie Search Engine",
     img: ubc,
     bio: "A web application that has a movie search engine and is able to store movies",
     link: "https://moviesearchjason.netlify.app/",
