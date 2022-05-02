@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import ProjectCard from "../Components/ProjectCard"
 import Grow from '@mui/material/Grow';
 import { AddBoxOutlined } from "@material-ui/icons";
-
+import ProjectInfo from "../Static/ProjectInfo"
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -118,16 +118,16 @@ function Projects() {
                 <TabPanel value={value} index={0} >
                     <Grid container display = "flex" justifyContent = "center" alignItems = "center" spacing = {1}>
                         <Grid item xs = {6} md = {4} lg = {4}>
-                            <ProjectCard />
+                            <ProjectCard projectInfo = {ProjectInfo[1]}/>
                         </Grid>
                         <Grid item xs = {6} md = {4} lg = {4}>
-                            <ProjectCard />
+                            <ProjectCard projectInfo = {ProjectInfo[2]}/>
                         </Grid>
                         <Grid item xs = {6} md = {4} lg = {4}>
-                            <ProjectCard />
+                            <ProjectCard projectInfo = {ProjectInfo[3]}/>
                         </Grid>
                         <Grid item xs = {6} md = {4} lg = {4}>
-                            <ProjectCard />
+                            <ProjectCard projectInfo = {ProjectInfo[4]}/>
                         </Grid>
                         <Grid item xs = {6} md = {4} lg = {4}> 
                          
@@ -141,17 +141,17 @@ function Projects() {
                 <TabPanel value={value} index={1} >
                     <Grid container display = "flex" justifyContent = "center" alignItems = "center" spacing = {1}>
                         <Grid item  >
-                            <ProjectCard />
+                            <ProjectCard projectInfo = {ProjectInfo[2]}/>
                         </Grid>
                     </Grid>
                 </TabPanel>
                 <TabPanel value={value} index={2} >
                     <Grid container  display = "flex" justifyContent = "center" alignItems = "center" spacing = {1} >
                         <Grid item xs = {6} md = {4} lg = {4}>
-                            <ProjectCard/>
+                            <ProjectCard projectInfo = {ProjectInfo[2]}/>
                         </Grid>
                         <Grid item xs = {6} md = {4} lg = {4}>
-                            <ProjectCard />
+                            <ProjectCard projectInfo = {ProjectInfo[4]}/>
                         </Grid>
 
                     </Grid>
@@ -159,7 +159,7 @@ function Projects() {
                 <TabPanel value={value} index={3} >
                     <Grid container display = "flex" justifyContent = "center" alignItems = "center" spacing = {1}>
                         <Grid item  >
-                            <ProjectCard />
+                            <ProjectCard projectInfo = {ProjectInfo[3]}/>
                         </Grid>
 
                     </Grid>
