@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jasonz23.github.io/my-website/",
+  "homepage": "https://jasonz23.github.io/website/",
   "dependencies": {
     "-": "^0.0.1",
     "@emotion/react": "^11.9.0",
