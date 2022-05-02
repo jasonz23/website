@@ -45,8 +45,7 @@ function a11yProps(index) {
 function Projects() {
     const useStyles = makeStyles((theme) => ({
         root: {
-            
-            height: "100vh",
+        
             background: 'linear-gradient(45deg,#FF8E53 120% ,#FE6B8B 100% )',
             display: "flex",
             flexDirection: "column",
@@ -59,7 +58,7 @@ function Projects() {
             fontWeight: "bold",
             color: "white",
             fontSize: "4rem",
-            margin : "0"
+            marginTop : "4vh"
             
 
         },
@@ -113,28 +112,24 @@ function Projects() {
                     </Tabs>
             </Box>      
             <Box >
-
-            
                 <TabPanel value={value} index={0} >
-                    <Grid container display = "flex" justifyContent = "center" alignItems = "center" spacing = {1}>
-                        <Grid item xs = {6} md = {4} lg = {4}>
+                    <Grid container  display = "flex" justifyContent = "center" alignItems = "center"  spacing = {1} style={{  maxWidth: 1000}}>
+                        <Grid item xs = {13} md = {4} lg = {4}>
                             <ProjectCard projectInfo = {ProjectInfo[1]}/>
                         </Grid>
-                        <Grid item xs = {6} md = {4} lg = {4}>
+                        <Grid item xs = {13} md = {4} lg = {4}>
                             <ProjectCard projectInfo = {ProjectInfo[2]}/>
                         </Grid>
-                        <Grid item xs = {6} md = {4} lg = {4}>
+                        <Grid item xs = {13} md = {4} lg = {4}>
                             <ProjectCard projectInfo = {ProjectInfo[3]}/>
                         </Grid>
-                        <Grid item xs = {6} md = {4} lg = {4}>
+                        <Grid item xs = {13} md = {4} lg = {4}>
                             <ProjectCard projectInfo = {ProjectInfo[4]}/>
                         </Grid>
-                        <Grid item xs = {6} md = {4} lg = {4}> 
-                         
+                        <Grid item xs = {13} md = {4} lg = {4}>
+                            <ProjectCard projectInfo = {ProjectInfo[5]}/>
                         </Grid>
-                        <Grid item xs = {6} md = {4} lg = {4}>
 
-                        </Grid>
                     </Grid>
                 </TabPanel>
     
@@ -147,11 +142,14 @@ function Projects() {
                 </TabPanel>
                 <TabPanel value={value} index={2} >
                     <Grid container  display = "flex" justifyContent = "center" alignItems = "center" spacing = {1} >
-                        <Grid item xs = {6} md = {4} lg = {4}>
+                        <Grid item xs = {13} md = {4} lg = {4}>
                             <ProjectCard projectInfo = {ProjectInfo[2]}/>
                         </Grid>
-                        <Grid item xs = {6} md = {4} lg = {4}>
+                        <Grid item xs = {13} md = {4} lg = {4}>
                             <ProjectCard projectInfo = {ProjectInfo[4]}/>
+                        </Grid>
+                        <Grid item xs = {13} md = {4} lg = {4}>
+                            <ProjectCard projectInfo = {ProjectInfo[5]}/>
                         </Grid>
 
                     </Grid>
