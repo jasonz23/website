@@ -77,10 +77,10 @@ function Menu() {
                 sx = {{
                     width: 250,
                     alignItems: "center",
-                    mt: 6
+                    mt: 4
                 }}
                 >
-                    <Grid item sx = {{pt: 5}}>
+                    <Grid item sx = {{pt: 0}}>
                         <Scroll to = "aboutme" smooth = {true}>
                             <Button onClick = {() => {setState(false)}}
                             className = {classes.button}>About Me</Button>
