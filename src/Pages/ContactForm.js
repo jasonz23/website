@@ -69,7 +69,7 @@ function ContactForm() {
             alignItems: "center",
             justifyContent: "center",
             flexDirection: "column",
-            background: 'linear-gradient(45deg,#FF8E53 120% ,#FE6B8B 100% )',
+            background: '#bdbdbd',
         },
         error: {
           color:"red"
@@ -78,7 +78,7 @@ function ContactForm() {
           fontFamily: "Nunito",
           fontWeight: "bold",
           fontSize: "3.5rem",
-          color: "#fff"
+          color: "#1c2321"
         }
     }))
     const classes = useStyles();
