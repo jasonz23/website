@@ -16,9 +16,15 @@ function Menu() {
         icon: {
             '& svg': {
                 fontSize: "2.3rem",
-                color: "white"
+                color: "#1c2321"
             },
 
+        },
+        menuIcon: {
+            '& svg': {
+                fontSize: "2.3rem",
+                color: "#fff"
+            },
         },
         menu: {
             width: "100vw",
@@ -26,7 +32,7 @@ function Menu() {
             flexDirection: "column",
             
             alignItems: "center",
-            background: '#FF9899',
+            background: "#bdbdbd",
             height: "100vh"
             
         },
@@ -38,7 +44,7 @@ function Menu() {
             alignSelf: "flex-end",
             '& svg': {
                 fontSize: "4.2rem",
-                color: "white",
+                color: "#1c2321",
                 marginRight: "5vw",
                 paddingTop: "7vh,"
             },
@@ -48,17 +54,21 @@ function Menu() {
                 border: "2px white solid",
                 fontSize: "2vh",
                 fontFamily: "Signika",
-                color: "#fff",
-                width: "30vw"
+                color: "#1c2321",
+                width: "30vw",
+                border: "3px #1c2321 solid"
 
             },
+            "&.MuiButton-outline": {
+                color: "#1c2321"
+            }
         }
     }))
     const classes = useStyles();
     const [state, setState] = React.useState(false);
     return (
         <div >
-            <IconButton className = {classes.icon} onClick = {() => {setState(true)}} >
+            <IconButton className = {classes.menuIcon} onClick = {() => {setState(true)}} >
                 <SortIcon/>  
             </IconButton>
             <Drawer
