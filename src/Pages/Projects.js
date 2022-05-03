@@ -46,7 +46,7 @@ function Projects() {
     const useStyles = makeStyles((theme) => ({
         root: {
         
-            background: 'linear-gradient(45deg,#FF8E53 120% ,#FE6B8B 100% )',
+            background: '#bdbdbd',
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -56,7 +56,7 @@ function Projects() {
             
             fontFamily: "Nunito",
             fontWeight: "bold",
-            color: "white",
+            color: "#1c2321",
             fontSize: "4rem",
             marginTop : "4vh"
             
@@ -69,7 +69,7 @@ function Projects() {
         },
         tab: {
             "&.MuiTab-root": {
-                color: "#fff",
+                color: "#1c2321",
                 fontFamily: "Nunito",
                 fontWeight: "bold"
             },
