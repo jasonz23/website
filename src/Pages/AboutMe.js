@@ -6,7 +6,7 @@ import AboutInfo from "../Static/AboutInfo";
 function AboutMe() {
     const useStyles = makeStyles(() => ({
         root: {
-            background: 'linear-gradient(45deg,#FF8E53 120% ,#FE6B8B 100% )',
+            background: "#bdbdbd",
             display: "flex",
             alignContent: "center",
             justifyContent: "center"
